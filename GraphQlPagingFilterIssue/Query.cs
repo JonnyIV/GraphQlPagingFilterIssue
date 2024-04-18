@@ -13,7 +13,7 @@ public class Movie
 {
     public string Name { get; set; } = "";
 
-    [UsePaging, UseFiltering]
+    [UseFiltering]
     public IQueryable<Character> GetCharacters()
     {
         return new Character[]
